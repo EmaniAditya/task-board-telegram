@@ -9,7 +9,7 @@ const bot = new Telegraf(BOT_TOKEN);
 
 // Basic commands
 bot.command('start', (ctx: any) => {
-  ctx.reply('Welcome to TaskVaultBot! 🚀\nUse /help to see available commands.');
+  ctx.reply('Welcome to TuskerFlowBot! 🚀\nUse /help to see available commands.');
 });
 
 bot.command('help', (ctx: any) => {

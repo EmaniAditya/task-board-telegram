@@ -14,7 +14,7 @@ export default function TaskForm({ groupId }: TaskFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title.trim() || !db) return;
+    if (!title.trim() || db) return;
 
     try {
       await addDoc(collection(db, 'tasks'), {
